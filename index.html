@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScan</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="Asset/logo_transparent.png" alt="NutriScan Logo" class="logo">
+                <span class="logo-text">NutriScan</span>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#cards">Cards</a></li>
+                <!-- <li><a href="#developers">Developers</a></li> -->
+                <li><a href="#technologies">Technologies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Welcome to <span>NutriScan</span></h1>
+            <p>Explore nutrition in an interactive way with Augmented Reality</p>
+            <a href="path/to/download" class="download-button">Download</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About NutriScan</h2>
+            <p>NutriScan is an Augmented Reality (AR) application designed to scan cards and display fruit objects interactively. It helps users learn nutritional information in a more engaging way.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="bx bx-scan"></i>
+                    <h3>Interactive Scanning</h3>
+                    <p>Scan cards and view interactive 3D fruit models.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="bx bx-book"></i>
+                    <h3>Nutrition Info</h3>
+                    <p>Learn about the benefits and nutrition of various fruits.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="bx bx-mobile"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Designed for a seamless mobile experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="cards">
+        <div class="container">
+            <h2>Explore Cards</h2>
+            <div class="baba">
+                <div class="carousel">
+                    <div class="slider">
+                        <section><img src="Asset/card/1.png" alt="Card 1"></section>
+                        <section><img src="Asset/card/2.png" alt="Card 2"></section>
+                        <section><img src="Asset/card/3.png" alt="Card 3"></section>
+                        <section><img src="Asset/card/4.png" alt="Card 4"></section>
+                        <section><img src="Asset/card/5.png" alt="Card 5"></section>
+                        <section><img src="Asset/card/6.png" alt="Card 6"></section>
+                        <section><img src="Asset/card/7.png" alt="Card 7"></section>
+                        <section><img src="Asset/card/8.png" alt="Card 8"></section>
+                        <section><img src="Asset/card/9.png" alt="Card 9"></section>
+                        <section><img src="Asset/card/10.png" alt="Card 10"></section>
+                        <section><img src="Asset/card/11.png" alt="Card 11"></section>
+                        <section><img src="Asset/card/12.png" alt="Card 12"></section>
+                        <section><img src="Asset/card/13.png" alt="Card 13"></section>
+                        <section><img src="Asset/card/14.png" alt="Card 14"></section>
+                        <section><img src="Asset/card/15.png" alt="Card 15"></section>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="left"><i class="material-icons"></i></button>
+                        <button class="right"><i class="material-icons"></i></button>
+                    </div>
+                </div>
+            </div>
+            <a href="path/to/cards/download" class="download-button">Download Cards</a>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2>Technologies</h2>
+            <div class="tech-logos">
+                <div class="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg" alt="Unity">
+                    <p>Unity</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://integralplm.com/wp-content/uploads/2021/12/vuforia-engine-logo.png" alt="Vuforia">
+                    <p>Vuforia</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android">
+                    <p>Android</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
